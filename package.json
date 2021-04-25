@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "binary-ip": "^1.0.1",
+    "decimal-to-binary": "^1.0.3",
+    "ip-address": "^7.1.0",
+    "is-ip": "^3.1.0",
+    "prompt": "^1.1.0"
+  }
+}

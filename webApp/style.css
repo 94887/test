@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F9FF;
+    font-size: 17px;
+}
+
+/*        1.NAVBAR          */
+/* =============================== */
+
+
+.navbar{
+    position: relative;
+    display: flex;
+    width:1270px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #0000000D;
+    opacity: 1;
+}
+.navbar > ul{
+    width: 700px;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-left: 10%;
+}
+.navbar > ul > li {
+    margin-right: 20px;
+    font-size: .8rem;
+}
+.navbar__logo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 13px;
+    left: 20px;
+    font-size: 20px !important;
+}
+.navbar__logo > img{
+    width: 40px ;
+}
+.navbar-button{
+    width:130px;
+    height:35px;
+    padding:3px;
+    outline: none;
+    border: none;
+    background: #820BC6 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    cursor:pointer;
+    color: white;
+}
+
+/*        2.MAIN          */
+/* =============================== */
+
+.main{
+    width:1170px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 45px;
+}
+.p__active{
+    color: #820BC6;
+}
+.main__title{
+    display: flex;
+    width:100px;
+    justify-content: space-between;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 45px;
+}
+.main__title > p{
+    cursor: pointer;
+}
+
+.main__header {
+    position: relative;
+    background : #000 url('assests/images/image1.jpg');
+    background-repeat: no-repeat;
+    background-position: 20% 21%; 
+    background-size: cover;
+    color: white;
+    height: 460px;
+    width: 100%;
+    border-radius: 20px;
+}
+.main__header > img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay__color{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #820BC6;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+.main__headerContaints{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index:100;
+    color:#fff;
+    margin-top:180px;
+    margin-left: 100px;
+}
+.main__headerContaints > button{
+    background: #1ED660;
+    width:110px;
+    height:30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.main__description{
+    font-size: 24px;
+    line-height: 40px;
+    width: 450px;
+}
+.main__avatar{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/*     3.CONTENT         */
+/* =========================== */
+
+.content{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap:10px;
+    grid-row-gap:20px;
+    box-sizing: border-box;
+}
+.post_container{
+    position: relative;
+    width:370px;
+    height:433px;
+    background: #fff;
+    display:flex;
+    flex-direction: column;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    opacity: 1;
+
+}
+.overlay__color1{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #820BC6;
+    opacity: 0.7;
+}
+.post_containeDiff{
+    position: relative;
+    width:370px;
+    height:433px;
+    background: #fff;
+    display:flex;
+    flex-direction: column;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    opacity: 1;
+    background : url('assests/images/bc.jpg');
+    background-repeat: no-repeat;
+    background-position: 20% 21%; 
+    background-size: cover;
+}
+.post__image1{
+    flex: 0.5;
+    background: url('assests/images/image11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post__image2{
+    flex: 0.5;
+    background: url('assests/images/image2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post__image3{
+    flex: 0.5;
+    background: url('assests/images/image3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post__image4{
+    flex: 0.5;
+    background: url('assests/images/image4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post__image5{
+    flex: 0.5;
+    background: url('assests/images/image5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post__desc{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: gray;
+    font-size: 12px;
+}
+.post__desc1{
+  position: absolute;
+  bottom: 4%;
+  left:55%;
+  display: flex;
+  flex-direction: column;
+  transform:translateX(-50%);
+  color:white;
+}
+.post__about{
+    color: black;
+    font-size: 22px;
+    max-width:300px;
+    text-align: center;
+}
+.content__avatar{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content__avatar1{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/*           4.PAGENINATION         */
+/* ======================================== */
+
+
+.pagenation{
+    margin-top: 45px;
+    width:1270px;
+}
+.pagenation__page{
+   width:200px;
+   height:30px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.pagenation__page > button{
+    margin: 0;
+    height: 30px;
+    border: 1px solid #EEEEEE;
+    background:#fff;
+    padding: 10px;
+    cursor: pointer;
+    color: #820BC6;
+    font-size: 12px !important;
+}
+.pageBtn__active{
+    height:40px;
+    color:#fff !important;
+    background-color: #820BC6 !important;
+}
+
+/*           5.BOTTOM         */
+/* ======================================== */
+
+
+.bottom{
+    color: #7C7D8D;
+    font-size: 12px;
+    position: relative;
+    margin-top:100px;
+    width:1270px;
+    height: 500px;
+    background-color : #fff;
+}
+.bottom__container{
+    height: 478px;
+    width:900px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.bottom__info{
+    width:138px;
+    height:158px;
+}
+.bottom__info > img {
+    width:40px;
+}
+.bottom__link{
+    cursor:pointer;
+}
+.bottom__copyRight{
+    text-align:center;
+    border-top: 1px solid lightgray;
+    padding:20px;
+    background-color: #fff;
+}
